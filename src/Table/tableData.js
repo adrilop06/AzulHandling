@@ -4,7 +4,7 @@ import DateFormatter from '../utils/DateFormatter';
 import "./tableStyle.css"
 import { MdFlightTakeoff, MdFlightLand } from "react-icons/md";
 
-function TableData({ a, d, oldDataDep, oldDataArr }) {
+function TableData({ a, d }) {
 
     
    

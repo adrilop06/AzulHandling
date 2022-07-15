@@ -10,8 +10,6 @@ function SearchBar() {
   const [airportInfoDep, setAirportInfoDep] = useState([]);
   const [airportInfoArr, setAirportInfoArr] = useState([]);
   const [airports, setAirports] = useState([]);
-  const [airportDeparturesCopy, setAirportDeparturesCopy] = useState([]);
-  const [airportArrivalCopy, setAirportArrivalCopy] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -56,7 +54,7 @@ function SearchBar() {
         
       });
       
-      setAirportDeparturesCopy({airportInfoDep});
+
 
  
     const urlArr = `https://airlabs.co/api/v9/schedules?arr_iata=${airportCode}&api_key=cca99757-4c5e-472f-a6a4-2f07c00e8813`;
@@ -69,7 +67,7 @@ function SearchBar() {
         setLoading(false)
       });
 
-      setAirportArrivalCopy({airportInfoArr});
+
       
   };
 
@@ -96,7 +94,7 @@ function SearchBar() {
         <div>
           <div >
             <h3 className="letter">Flights for today in {airportDepartures}</h3>
-            <TableData a={airportInfoDep} d={airportInfoArr} oldDataDep={airportDeparturesCopy} oldDataArr={airportArrivalCopy} />
+            <TableData a={airportInfoDep} d={airportInfoArr} />
             
           </div>
         </div>
