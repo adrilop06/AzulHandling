@@ -3,6 +3,7 @@ import {  useState, useEffect } from 'react';
 import "./searcherStyle.css"
 import ClipLoader from "react-spinners/ClipLoader";
 import TableData from "../Table/tableData"
+import env from "react-dotenv";
 
 function SearchBar() {
   const [airportDepartures, setInputAirportDepartures] = useState("");
@@ -15,7 +16,7 @@ function SearchBar() {
   useEffect(() => {
     const getAirportsData = async () => {
       setLoading(true);
-      fetch("https://airlabs.co/api/v9/airports?api_key=cca99757-4c5e-472f-a6a4-2f07c00e8813")
+      fetch("https://airlabs.co/api/v9/airports?api_key=cdcf6cc2-1486-4897-a547-ab589e4d46e3")
         .then((response) => response.json())
         .then((data) => {
           const airports = data.response.map((airport) => ({
@@ -45,7 +46,7 @@ function SearchBar() {
 
     
     setLoading(true);
-    const urlDep = `https://airlabs.co/api/v9/schedules?dep_iata=${airportCode}&api_key=cca99757-4c5e-472f-a6a4-2f07c00e8813`;
+    const urlDep = `https://airlabs.co/api/v9/schedules?dep_iata=${airportCode}&api_key=cdcf6cc2-1486-4897-a547-ab589e4d46e3`;
     await fetch(urlDep)
       .then((response) => response.json())
       .then((data) => {
