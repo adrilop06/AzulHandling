@@ -3,7 +3,7 @@ import {  useState, useEffect } from 'react';
 import "./searcherStyle.css"
 import ClipLoader from "react-spinners/ClipLoader";
 import TableData from "../Table/tableData"
-import env from "react-dotenv";
+
 
 function SearchBar() {
   const [airportDepartures, setInputAirportDepartures] = useState("");
@@ -16,7 +16,7 @@ function SearchBar() {
   useEffect(() => {
     const getAirportsData = async () => {
       setLoading(true);
-      fetch("https://airlabs.co/api/v9/airports?api_key=cdcf6cc2-1486-4897-a547-ab589e4d46e3")
+      fetch(`https://airlabs.co/api/v9/airports?api_key=cdcf6cc2-1486-4897-a547-ab589e4d46e3`)
         .then((response) => response.json())
         .then((data) => {
           const airports = data.response.map((airport) => ({
@@ -82,7 +82,7 @@ function SearchBar() {
               value={airportDepartures}
               onChange={onAirportChange}>
             <option selected className="letter">Select One</option>
-            {airports.slice(0,20).map((airport,i) => (
+            {airports.map((airport,i) => (
                 <option key={i} value={airport.iata}>{airport.name}</option>
             ))}
             
