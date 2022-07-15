@@ -8,6 +8,7 @@ function App() {
     <div class="main h-screen">
       <div class="App">
         <SearchBar/>
+        
       </div>
     </div>
   );
