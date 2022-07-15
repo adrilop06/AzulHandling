@@ -1,8 +1,10 @@
 .menu{
     position: absolute;
+    height:auto;
     width:100%;
     background-color: transparent;
     overflow: hidden;
+    background-color: #151C24;
 }
 
 .letter{

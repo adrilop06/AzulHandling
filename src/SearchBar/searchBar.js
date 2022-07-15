@@ -96,7 +96,7 @@ function SearchBar() {
         <div>
           <div >
             <h3 className="letter">Flights for today in {airportDepartures}</h3>
-            <TableData a={airportInfoDep} d={airportInfoArr} oldDataDep={airportDeparturesCopy} oldDataArr={airportArrivalCopy}/>
+            <TableData a={airportInfoDep} d={airportInfoArr} oldDataDep={airportDeparturesCopy} oldDataArr={airportArrivalCopy} />
             
           </div>
         </div>

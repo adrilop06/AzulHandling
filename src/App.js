@@ -5,11 +5,11 @@ import './App.css';
 
 function App() {
   return (
-    <div class="main h-screen">
+
       <div class="App">
         <SearchBar/>
       </div>
-    </div>
+
   );
 }
 
