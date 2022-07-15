@@ -1,0 +1,10 @@
+.menu{
+    position: absolute;
+    width:100%;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.letter{
+    color:white;
+}

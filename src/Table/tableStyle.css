@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono&display=swap');
+
+.table{
+    max-width:95%;
+    background-color:#343638;
+    border:none;
+}
+.orange-letter{
+    font-family: 'Roboto Mono', monospace;
+}
+.card-icon{
+    height:10vh;
+    widht:5vh;
+}
+.departure-icon{
+    
+  color:white;
+}
+.spin{
+    display: block;
+    position: fixed;
+    z-index: 1031; 
+    top: 50%;
+    right: 50%; 
+    margin-top: -..px; 
+    margin-right: -..px; 
+}
